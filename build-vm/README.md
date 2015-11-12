@@ -14,3 +14,5 @@
 
 ### References:
 * https://docs.vagrantup.com/v2/getting-started/up.html
+* http://openjdk.java.net/install/
+* http://superuser.com/questions/164553/automatically-answer-yes-when-using-apt-get-install
