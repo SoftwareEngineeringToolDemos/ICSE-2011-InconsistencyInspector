@@ -13,7 +13,6 @@ Vagrant.configure(2) do |config|
   # Every Vagrant development environment requires a box. You can search for
   # boxes at https://atlas.hashicorp.com/search.
   config.vm.box = "box-cutter/ubuntu1404-desktop"
-  config.vm.hostname = "InconsistencyInspector"
 
   # Disable automatic box update checking. If you disable this, then
   # boxes will only be checked for updates when the user runs
@@ -50,7 +49,9 @@ Vagrant.configure(2) do |config|
   
      # Customize the amount of memory on the VM:
      vb.memory = "1024"
-     vb.name = "InconsistencyInspector"
+          
+     vb.customize ["modifyvm", :id, "--usb", "on"]
+     vb.customize ["modifyvm", :id, "--usbehci", "on"]
   end
   #
   # View the documentation for the provider you are using for more
@@ -69,5 +70,25 @@ Vagrant.configure(2) do |config|
   config.vm.provision "shell", inline: <<-SHELL
      sudo apt-get update
      sudo apt-get install -y openjdk-7-jdk
+     sudo apt-get -y install mercurial
+     cd Desktop
+     gsettings set com.canonical.Unity.Launcher favorites "['application://nautilus.desktop', 'application://unity-control-center.desktop', 'application://firefox.desktop', 'unity://running-apps', 'application://gnome-terminal.desktop', 'unity://expo-icon', 'unity://devices']"
+     hg clone https://bitbucket.org/rtholmes/inconsistencyinspectorresources  
+
+    #Download project zip file
+    sudo wget https://github.com/SoftwareEngineeringToolDemos/ICSE-2011-InconsistencyInspector/archive/master.zip
+        #Unzip the directory.
+        unzip master.zip
+        
+        #Rename the directory
+        mv /home/vagrant/Desktop/ICSE-2011-InconsistencyInspector-master/ /home/vagrant/Desktop/II
+        
+        #Copy the content onto Desktop
+        cp -a II/build-vm/VM-Documents/installation.txt /home/vagrant/Desktop/
+        cp -a II/build-vm/VM-Documents/license.txt /home/vagrant/Desktop/
+        cp -a II/build-vm/VM-Documents/readme.txt /home/vagrant/Desktop/
+        cp -a II/build-vm/VM-Documents/How to use Inconsistency Inspector.desktop /home/vagrant/Desktop/
+        
+
   SHELL
 end
