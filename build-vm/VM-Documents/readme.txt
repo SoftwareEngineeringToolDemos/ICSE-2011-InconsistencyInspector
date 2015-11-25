@@ -8,12 +8,12 @@ Instructions
 
 Extract static graph from jar
 1. Clone this project
-2. Edit InconsistencyInspectorStandalone.properties (just    	the top line) to point to wherever you cloned the 	project complete path)
+2. Edit InconsistencyInspectorStandalone.properties (just the top line) to point to wherever you cloned the project complete path)
 3. Extract the graph ``ant iiStatic -Djar=android.jar'
 
 Complete II Simple Instructions:
 1. Download and configure this project (steps 1-5 below).
-2. Compile your system and run ant iiStatic to extract the 	static call graph (or run ant iiComplete to extract 	the static and dynamic call graphs).
+2. Compile your system and run ant iiStatic to extract the 	static call graph (or run ant iiComplete to extract the static and dynamic call graphs).
 
 Complete Instructions:
 
@@ -44,8 +44,8 @@ Advanced Notes
 Logging
 
 Two parameters are provided for disabling logging in the inconsistencyinspectorresources projects:
-	1. -Dlsmr.logLevel="OFF" Will disable the majority of log 			messages (in anything that uses log4j).
-	2. -Dii.logLevel="OFF" Will disable log messages in the 			inconsistecy.core project. The parameter is different 			here because GWT projects cannot depend on log4j and 			we have created our own log wrapper here instead.
+	1. -Dlsmr.logLevel="OFF" Will disable the majority of log messages (in anything that uses log4j).
+	2. -Dii.logLevel="OFF" Will disable log messages in the inconsistecy.core project. The parameter is different here because GWT projects cannot depend on log4j and we have created our own log wrapper here instead.
 
 NOTE: these parameters work on the command line or in Eclipse but will not work through ant (e.g., ant does not forward the values to any JVMs it launches).
 
