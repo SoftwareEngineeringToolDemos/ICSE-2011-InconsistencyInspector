@@ -13,6 +13,8 @@
   * Password: vagrant
 
 ### References:
-* https://docs.vagrantup.com/v2/getting-started/up.html
-* http://openjdk.java.net/install/
+* Vagrant - Getting Started https://docs.vagrantup.com/v2/getting-started/up.html
+* Open JDK installation guide - http://openjdk.java.net/install/
 * http://superuser.com/questions/164553/automatically-answer-yes-when-using-apt-get-install
+* Shell Provisioner: https://docs.vagrantup.com/v2/provisioning/shell.html
+* Vagrant VirtualBox Image used : https://atlas.hashicorp.com/box-cutter/boxes/ubuntu1404-desktop
