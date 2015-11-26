@@ -92,8 +92,6 @@ Vagrant.configure(2) do |config|
         sudo rm -rf master.zip
     
     gsettings set com.canonical.Unity.Launcher favorites "['application://nautilus.desktop', 'unity://running-apps', 'application://gnome-terminal.desktop', 'unity://expo-icon', 'unity://devices']"
-    
-    gsettings "ABCD"
 
   SHELL
 end
