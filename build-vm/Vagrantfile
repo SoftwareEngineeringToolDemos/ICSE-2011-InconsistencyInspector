@@ -24,9 +24,10 @@ Vagrant.configure(2) do |config|
   
      # Customize the amount of memory on the VM:
      vb.memory = "1024"
-          
-     vb.customize ["modifyvm", :id, "--usb", "on"]
-     vb.customize ["modifyvm", :id, "--usbehci", "on"]
+     
+     # Disable USB Controller    
+     vb.customize ["modifyvm", :id, "--usb", "off"]
+     vb.customize ["modifyvm", :id, "--usbehci", "off"]
   end
    
 
