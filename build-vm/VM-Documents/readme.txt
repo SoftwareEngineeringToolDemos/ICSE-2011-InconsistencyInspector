@@ -1,21 +1,32 @@
-InconsistencyInspectorResources
-
+ -------------------------------
+|InconsistencyInspectorResources|
+ -------------------------------
 This project contains the resources require to collect data for the InconsistencyInspector. Basically the project enables you to extract the static and dynamic call graphs for a system and export them to an XML file. Currently only projects that can be built (and have their test suite executed) by ant are supported. If you have any problems, please contact me.
 
-NOTE The static targets are easy to use and configure; the dynamic targets are much more finicky (expect to succeed, but be frustrated in the process).
+ ----
+|NOTE|
+ ----
 
-Instructions
+
+The static targets are easy to use and configure; the dynamic targets are much more finicky (expect to succeed, but be frustrated in the process).
+ ------------
+|Instructions|
+ ------------
 
 Extract static graph from jar
 1. Clone this project
 2. Edit InconsistencyInspectorStandalone.properties (just the top line) to point to wherever you cloned the project complete path)
 3. Extract the graph ``ant iiStatic -Djar=android.jar'
+ -------------------------------
+|Complete II Simple Instructions|
+ -------------------------------
 
-Complete II Simple Instructions:
 1. Download and configure this project (steps 1-5 below).
 2. Compile your system and run ant iiStatic to extract the 	static call graph (or run ant iiComplete to extract the static and dynamic call graphs).
 
-Complete Instructions:
+ ---------------------
+|Complete Instructions|
+ ---------------------
 
 1. Checkout this project (hg clone ssh://hg@bitbucket.org/rtholmes/inconsistencyinspectorresources)
 
@@ -38,15 +49,20 @@ Complete Instructions:
 10. Update the iiDynamic target in build.inconsistency.xml to look like the target that runs the tests in your own system. Important: you should run the test code from the directory that the iiWeave target outputs the code from. XXX: more detail needed here. (Classpath setup?)
 
 11. Run your test suite as you normally would (this depends on your ant configuration but ant test is often right). The dynamic call graph will be in the report directory you specified in the properties file.
+ 
+ --------------
+|Advanced Notes|
+ --------------
 
-Advanced Notes
-
-Logging
-
+ -------
+|Logging|
+ -------
+ 
 Two parameters are provided for disabling logging in the inconsistencyinspectorresources projects:
 	1. -Dlsmr.logLevel="OFF" Will disable the majority of log messages (in anything that uses log4j).
 	2. -Dii.logLevel="OFF" Will disable log messages in the inconsistecy.core project. The parameter is different here because GWT projects cannot depend on log4j and we have created our own log wrapper here instead.
-
-NOTE: these parameters work on the command line or in Eclipse but will not work through ant (e.g., ant does not forward the values to any JVMs it launches).
-
-If you have any problem running the iStatic or iDynamic targets you may need to modify the build.inconsistency.xml. This may be necessary if you have an unusual or complex build environment.
+ ----
+|NOTE| 
+ ----
+1. These parameters work on the command line or in Eclipse but will not work through ant (e.g., ant does not forward the values to any JVMs it launches).
+2. If you have any problem running the iStatic or iDynamic targets you may need to modify the build.inconsistency.xml. This may be necessary if you have an  unusual or complex build environment.
