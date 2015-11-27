@@ -6,9 +6,8 @@ This project contains the resources require to collect data for the Inconsistenc
  ----
 |NOTE|
  ----
-
-
 The static targets are easy to use and configure; the dynamic targets are much more finicky (expect to succeed, but be frustrated in the process).
+
  ------------
 |Instructions|
  ------------
@@ -17,6 +16,7 @@ Extract static graph from jar
 1. Clone this project
 2. Edit InconsistencyInspectorStandalone.properties (just the top line) to point to wherever you cloned the project complete path)
 3. Extract the graph ``ant iiStatic -Djar=android.jar'
+
  -------------------------------
 |Complete II Simple Instructions|
  -------------------------------
