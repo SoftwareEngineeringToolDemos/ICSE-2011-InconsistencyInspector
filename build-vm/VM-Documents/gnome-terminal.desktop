@@ -1,0 +1,11 @@
+
+[Desktop Entry]
+Type=Application
+Exec=gnome-terminal -e "bash -c 'cd /home/vagrant/Desktop/type-inference-0.1.2;./binary/javai-reim inference-tests/CellClient.java;$SHELL'"
+Hidden=false
+NoDisplay=false
+X-GNOME-Autostart-enabled=true
+Name[en_US]=ReIminfer
+Name=Terminal
+Comment[en_US]=Start up reiminfer
+Comment=Start up reiminfer
