@@ -3,7 +3,7 @@
 ### Steps:
 1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.vagrantup.com/downloads.html).
 2. Clone the repo from the following [URL](
-   https://github.com/SoftwareEngineeringToolDemos/ICSE-2011-InconsistencyInspector/blob/master/build-vm/Vagrantfile)
+   https://github.com/SoftwareEngineeringToolDemos/ICSE-2011-InconsistencyInspector.git)
 3. Navigate to this directory where it is cloned from terminal. This is the project root.
 4. Navigate to the build-vm directory and run the command 'vagrant up'. 
 
