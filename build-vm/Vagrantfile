@@ -62,13 +62,6 @@ Vagrant.configure(2) do |config|
         sudo cp -a II/build-vm/VM-Documents/readme.txt /home/vagrant/Desktop/
         sudo cp -a II/build-vm/VM-Documents/"How to use Inconsistency Inspector.desktop" /home/vagrant/Desktop/
         
-        #Enable autologin.
-		sudo mkdir /etc/lightdm/lightdm.conf.d
-		chmod 777 /etc/lightdm/lightdm.conf.d
-		cd /etc/lightdm/lightdm.conf.d/
-		sudo touch 50-myconfig.conf
-		echo -ne "[SeatDefaults]\nautologin-user=vagrant" >> 50-myconfig.conf
-        
         # Remove unnecessary files.
         sudo rm -rf II/
         sudo rm -rf master.zip
@@ -80,6 +73,13 @@ Vagrant.configure(2) do |config|
 		sudo rm -f "/usr/share/applications/ubuntu-software-center.desktop"
 		sudo rm -f "/usr/share/applications/ubuntuone-installer.desktop"
 		sudo rm -f "/usr/share/applications/ubuntu-amazon-default.desktop"
+        
+        #Enable autologin.
+		sudo mkdir /etc/lightdm/lightdm.conf.d
+		chmod 777 /etc/lightdm/lightdm.conf.d
+		cd /etc/lightdm/lightdm.conf.d/
+		sudo touch 50-myconfig.conf
+		echo -ne "[SeatDefaults]\nautologin-user=vagrant" >> 50-myconfig.conf
         
         # Reboot the machine.
 		sudo reboot
