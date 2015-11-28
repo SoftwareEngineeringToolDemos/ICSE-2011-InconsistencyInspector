@@ -2,12 +2,12 @@
 
 ### Steps:
 1. Install [VirtualBox](https://www.virtualbox.org/wiki/Downloads) and [Vagrant](https://www.vagrantup.com/downloads.html).
-2. Clone the repo from the following URL.
-'https://github.com/SoftwareEngineeringToolDemos/ICSE-2011-InconsistencyInspector/blob/master/build-vm/Vagrantfile'
-3.  Navigate to this directory where it is cloned from terminal. This is the project root.
-4.  Navigate to the build-vm directory and run the command 'vagrant up'. 
+2. Clone the repo from the following [URL](
+   https://github.com/SoftwareEngineeringToolDemos/ICSE-2011-InconsistencyInspector/blob/master/build-vm/Vagrantfile)
+3. Navigate to this directory where it is cloned from terminal. This is the project root.
+4. Navigate to the build-vm directory and run the command 'vagrant up'. 
 
-5.  This is what you will observer during installation.
+5. This is what you will observer during installation.
     * Base image is downloaded.
     * Virtual machine is created.
     * Virtual machine is started in GUI mode.
@@ -21,8 +21,8 @@
     * VM is restarted.
     
 ### Login Credential:
-Username: vagrant
-Password: vagrant
+    * Username: vagrant
+    * Password: vagrant
 
 ### Tool in action:
 To make the tool work, please go through the [Readme.txt](https://github.com/SoftwareEngineeringToolDemos/ICSE-2011-InconsistencyInspector/blob/master/build-vm/VM-Documents/readme.txt) file.
