@@ -74,8 +74,8 @@ Vagrant.configure(2) do |config|
         cd /home/vagrant/.config
 		mkdir autostart	
 		chmod 777 autostart
-		sudo mv II/build-vm/VM-Documents/gnome-terminal.desktop /home/vagrant/.config/autostart/
-		sudo mv II/build-vm/VM-Documents/disable-lock.desktop /home/vagrant/.config/autostart/
+		sudo mv /home/vagrant/Desktop/II/build-vm/VM-Documents/gnome-terminal.desktop /home/vagrant/.config/autostart/
+		sudo mv /home/vagrant/Desktop/II/build-vm/VM-Documents/disable-lock.desktop /home/vagrant/.config/autostart/
         
         # Remove unnecessary files.
         cd /home/vagrant/Desktop
