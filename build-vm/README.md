@@ -5,8 +5,7 @@
 2. Clone the repo from the following [URL](
    https://github.com/SoftwareEngineeringToolDemos/ICSE-2011-InconsistencyInspector.git)
 3. Navigate to this directory where it is cloned from terminal. This is the project root.
-4. Navigate to the build-vm directory and run the command 'vagrant up'. 
-
+4. Navigate to the build-vm directory and run the command 'vagrant up'.
 5. This is what you will observer during installation.
     * Base image is downloaded.
     * Virtual machine is created.
