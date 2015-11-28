@@ -45,8 +45,6 @@ Vagrant.configure(2) do |config|
      
      cd Desktop
      
-     gsettings set com.canonical.Unity.Launcher favorites "['application://nautilus.desktop', 'unity://running-apps', 'application://gnome-terminal.desktop', 'unity://expo-icon', 'unity://devices']"
-     
      # Clone the project repo on desktop.
      hg clone https://bitbucket.org/rtholmes/inconsistencyinspectorresources  
 
@@ -64,11 +62,27 @@ Vagrant.configure(2) do |config|
         sudo cp -a II/build-vm/VM-Documents/readme.txt /home/vagrant/Desktop/
         sudo cp -a II/build-vm/VM-Documents/"How to use Inconsistency Inspector.desktop" /home/vagrant/Desktop/
         
+        #Enable autologin.
+		sudo mkdir /etc/lightdm/lightdm.conf.d
+		chmod 777 /etc/lightdm/lightdm.conf.d
+		cd /etc/lightdm/lightdm.conf.d/
+		sudo touch 50-myconfig.conf
+		echo -ne "[SeatDefaults]\nautologin-user=vagrant" >> 50-myconfig.conf
+        
         # Remove unnecessary files.
         sudo rm -rf II/
         sudo rm -rf master.zip
-    
-    gsettings set com.canonical.Unity.Launcher favorites "['application://nautilus.desktop', 'unity://running-apps', 'application://gnome-terminal.desktop', 'unity://expo-icon', 'unity://devices']"
+        
+        #Remove unnecessary sidebar icons.
+		sudo rm -f "/usr/share/applications/libreoffice-calc.desktop"
+		sudo rm -f "/usr/share/applications/libreoffice-writer.desktop"
+		sudo rm -f "/usr/share/applications/libreoffice-impress.desktop"
+		sudo rm -f "/usr/share/applications/ubuntu-software-center.desktop"
+		sudo rm -f "/usr/share/applications/ubuntuone-installer.desktop"
+		sudo rm -f "/usr/share/applications/ubuntu-amazon-default.desktop"
+        
+        # Reboot the machine.
+		sudo reboot
 
   SHELL
 end
