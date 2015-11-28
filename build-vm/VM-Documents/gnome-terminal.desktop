@@ -1,7 +1,7 @@
-
 [Desktop Entry]
 Type=Application
 Hidden=false
+Exec=gnome-terminal -e "bash -c 'cd /home/vagrant/Desktop/'"
 NoDisplay=false
 X-GNOME-Autostart-enabled=true
 Name[en_US]=InconsistencyInspector
