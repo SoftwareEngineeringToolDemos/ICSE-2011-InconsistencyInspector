@@ -24,8 +24,9 @@
     * Password: vagrant
 
 ### Tool in action:
-    * To make the tool work, please go through the [Readme.txt](https://github.com/SoftwareEngineeringToolDemos/ICSE-2011-InconsistencyInspector/blob/master/build-vm/VM-Documents/readme.txt) file.
-    * This is the link for [YouTube video](https://www.youtube.com/watch?v=ha_JOdqqzTE).
+To make the tool work, please go through the [Readme.txt](https://github.com/SoftwareEngineeringToolDemos/ICSE-2011-InconsistencyInspector/blob/master/build-vm/VM-Documents/readme.txt) file.
+
+This is the link for [YouTube video](https://www.youtube.com/watch?v=ha_JOdqqzTE).
 
 ### References:
 * Vagrant - Getting Started https://docs.vagrantup.com/v2/getting-started/up.html
