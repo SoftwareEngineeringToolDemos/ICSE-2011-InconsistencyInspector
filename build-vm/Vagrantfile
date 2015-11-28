@@ -62,13 +62,13 @@ Vagrant.configure(2) do |config|
         sudo cp -a II/build-vm/VM-Documents/installation.txt /home/vagrant/Desktop/
         sudo chmod 777 installation.txt
         
-        sudo cp chmod 777 -a II/build-vm/VM-Documents/license.txt /home/vagrant/Desktop/
+        sudo cp -a II/build-vm/VM-Documents/license.txt /home/vagrant/Desktop/
         sudo chmod 777 license.txt
         
-        sudo cp chmod 777 -a II/build-vm/VM-Documents/readme.txt /home/vagrant/Desktop/
+        sudo cp -a II/build-vm/VM-Documents/readme.txt /home/vagrant/Desktop/
         sudo chmod 777 readme.txt
         
-        sudo cp chmod 777 -a II/build-vm/VM-Documents/"How to use Inconsistency Inspector.desktop" /home/vagrant/Desktop/
+        sudo cp -a II/build-vm/VM-Documents/"How to use Inconsistency Inspector.desktop" /home/vagrant/Desktop/
         sudo chmod 777 "How to use Inconsistency Inspector.desktop"
         
         #Enable autologin.
