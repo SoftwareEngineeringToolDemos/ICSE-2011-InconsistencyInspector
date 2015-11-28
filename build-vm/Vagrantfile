@@ -47,7 +47,8 @@ Vagrant.configure(2) do |config|
      cd /home/vagrant/Desktop
      
      # Clone the project repo on desktop.
-     hg clone https://bitbucket.org/rtholmes/inconsistencyinspectorresources  
+     hg clone https://bitbucket.org/rtholmes/inconsistencyinspectorresources
+     sudo chmod 777 inconsistencyinspectorresources
 
     #Download project zip file
     sudo wget https://github.com/SoftwareEngineeringToolDemos/ICSE-2011-InconsistencyInspector/archive/master.zip
@@ -55,13 +56,20 @@ Vagrant.configure(2) do |config|
         unzip master.zip
         
         #Rename the directory
-        sudo chmod 777 mv /home/vagrant/Desktop/ICSE-2011-InconsistencyInspector-master/ /home/vagrant/Desktop/II
-        
+        sudo mv /home/vagrant/Desktop/ICSE-2011-InconsistencyInspector-master/ /home/vagrant/Desktop/II
+                
         #Copy the content onto Desktop
-        sudo chmod 777 cp -a II/build-vm/VM-Documents/installation.txt /home/vagrant/Desktop/
-        sudo chmod 777 cp -a II/build-vm/VM-Documents/license.txt /home/vagrant/Desktop/
-        sudo chmod 777 cp -a II/build-vm/VM-Documents/readme.txt /home/vagrant/Desktop/
-        sudo chmod 777 cp -a II/build-vm/VM-Documents/"How to use Inconsistency Inspector.desktop" /home/vagrant/Desktop/
+        sudo cp -a II/build-vm/VM-Documents/installation.txt /home/vagrant/Desktop/
+        sudo chmod 777 installation.txt
+        
+        sudo cp chmod 777 -a II/build-vm/VM-Documents/license.txt /home/vagrant/Desktop/
+        sudo chmod 777 license.txt
+        
+        sudo cp chmod 777 -a II/build-vm/VM-Documents/readme.txt /home/vagrant/Desktop/
+        sudo chmod 777 readme.txt
+        
+        sudo cp chmod 777 -a II/build-vm/VM-Documents/"How to use Inconsistency Inspector.desktop" /home/vagrant/Desktop/
+        sudo chmod 777 "How to use Inconsistency Inspector.desktop"
         
         #Enable autologin.
 		sudo mkdir /etc/lightdm/lightdm.conf.d
