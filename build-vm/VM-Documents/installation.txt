@@ -7,4 +7,4 @@ https://bitbucket.org/rtholmes/inconsistencyinspectorresources/overview
 
 3. It does not require any specific installation as it is a command line tool.
 
-4. Please follow the guideline in README.txt file to configure the tool with the project.
+4. Please follow the guideline specified in the README.txt file to configure the tool with the project.
