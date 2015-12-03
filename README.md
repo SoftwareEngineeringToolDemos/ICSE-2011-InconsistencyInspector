@@ -2,7 +2,7 @@ This repository contains information related to the tool Inconsistency Inspector
 <p>
 The tool was originally presented in this [Paper](http://dl.acm.org/citation.cfm?id=1985972) at International Conference on Software Engineering, 2011.
 <p>
-This repository is <b><i>NOT</i></b> the original repository for this tool and please refer to the .<br>
+This repository <b><i> IS NOT</i></b> the original repository for this tool and please refer to the .<br>
 * [ Official Project Page](https://bitbucket.org/rtholmes/inconsistencyinspectorresources/) for Source code and compilation steps.
 <p>
 
