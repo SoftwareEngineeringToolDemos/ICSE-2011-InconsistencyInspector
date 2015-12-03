@@ -10,7 +10,7 @@ In this repository, for Inconsistency Inspector you will find:<br>
 * :x:  Source Code (Not available for redistribution)
 * :x:  Binary (Not available for redistribution)
 * :x: The original video page (Not available)
-* :white_check_mark: VM containing tool [Available]()
+* :white_check_mark: Virtual machine containing tool [Available]()
 <p>
 
 This repository was constructed by [Bhargav Jhaveri](https://github.com/BhargavJhaveri/) under the supervision of [Dr. Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Reid Holmes for his help in establishing this repository.
