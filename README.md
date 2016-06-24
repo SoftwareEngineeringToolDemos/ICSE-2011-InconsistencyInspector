@@ -7,9 +7,8 @@ This repository <b><i> IS NOT</i></b> the original repository for this tool and 
 <p>
 
 In this repository, for Inconsistency Inspector you will find:<br>
-* :x:  Source Code (Not available for redistribution)
-* :x:  Binary (Not available for redistribution)
-* :x: The original video page (Not available)
+* :x: Source code (not available)
+* :x: Executable tool (not available)
 * :white_check_mark: Virtual machine containing tool [Available](https://drive.google.com/open?id=0B-9L-nKc3oKveU5ub2E4TzQyRGs)
 <p>
 
