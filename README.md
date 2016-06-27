@@ -9,7 +9,7 @@ This repository <b><i> IS NOT</i></b> the original repository for this tool and 
 In this repository, for Inconsistency Inspector you will find:<br>
 * :x: Source code (not available)
 * :x: Executable tool (not available)
-* :white_check_mark: Virtual machine containing tool [Available](https://drive.google.com/open?id=0B-9L-nKc3oKveU5ub2E4TzQyRGs)
+* :white_check_mark: [Virtual machine containing tool](https://go.ncsu.edu/SE-tool-VMs)
 <p>
 
 This repository was constructed by [Bhargav Jhaveri](https://github.com/BhargavJhaveri/) under the supervision of [Dr. Emerson Murphy-Hill](https://github.com/CaptainEmerson). Thanks to Reid Holmes for his help in establishing this repository.
